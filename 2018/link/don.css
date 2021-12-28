@@ -1,0 +1,93 @@
+#acceuil {
+  position: absolute;
+  left: 500px;
+  right: 0px;
+  top: 0px;
+  width: auto;
+  height: auto;
+  background-color: #40404c;
+}
+#uptitle {
+  color: white;
+  line-height: 150px;
+  height: 150px;
+}
+
+#paypal, #stripe {
+  width: 40%;
+  height: 240px;
+  margin-left: 6.6%;
+  background-position: center;
+  background-repeat: no-repeat;
+  float: left;
+  margin-top: 70px;
+  margin-bottom: 200px;
+  border-radius: 10px;
+  background-color:white;
+  transition: .2s;
+}
+#paypal:hover, #stripe:hover {
+  cursor: pointer;
+  margin-top: 75px;
+}
+#des {
+  color: white;
+  font-size: 20px;
+  margin-left: 65px;
+  width: 800px;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+#acceuil {
+  left: 300px;
+}
+#acceuilvideo {
+    margin: auto;
+    left: 4%; right: 4%;
+    width: 92%;
+    height: auto;
+    padding-top: 66.66%;
+    background-color: #bce4ed;
+    margin-bottom: 60px;
+    background-size: cover;
+    cursor: pointer;
+}
+iframe {
+  margin-bottom: 50px;
+  width: 92%;
+  height: 400px;
+}
+#des {
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+#uptitle {
+  font-size: 1.5rem;
+}
+#des {
+  font-size: 15px;
+  margin-bottom: 100px;
+}
+#paypal, #stripe {
+  width: 80%;
+  height: 240px;
+  margin-left:10%;
+  float: none;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+#paypal:hover, #stripe:hover {
+  margin-top: 15px;
+}
+}
+
+@media only screen and (max-width: 760px) {
+
+}

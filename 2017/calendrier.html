@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="img/CGDcopy.png" type="image">
+    <meta charset="utf-8">
+    <title>Notre Calendrier</title>
+  </head>
+  <script>
+
+        var nbclck=0;
+        function mmenu() {
+        nbclck++;
+
+
+
+        if (nbclck%2==0) {
+
+          document.getElementById("d").style.height="0px";
+
+          document.body.style.overflow="visible";
+
+          document.getElementById("a1").style.visibility="hidden";
+          document.getElementById("a2").style.visibility="hidden";
+          document.getElementById("a3").style.visibility="hidden";
+          document.getElementById("a4").style.visibility="hidden";
+          document.getElementById("a5").style.visibility="hidden";
+
+          document.getElementById("bannlog").style.visibility="hidden";
+          document.getElementById("bannlog").style.opacity="0";
+
+          document.getElementById("a1").style.left="-110px";
+          document.getElementById("a2").style.left="-160px";
+          document.getElementById("a3").style.left="-210px";
+          document.getElementById("a4").style.left="-260px";
+          document.getElementById("a5").style.left="-310px";
+          document.getElementById("event1").style.visibility="visible";
+          document.getElementById("event1").style.height="610px";
+          document.getElementById("event1").style.top="250px";
+          document.getElementById("event2").style.visibility="visible";
+          document.getElementById("event2").style.height="610px";
+          document.getElementById("event2").style.top="910px";
+          document.getElementById("d").style.position="absolute";
+
+        }
+
+        else {
+
+          document.getElementById("d").style.height="100%";
+
+          document.body.style.overflow="hidden";
+
+          document.getElementById("a1").style.visibility="visible";
+          document.getElementById("a2").style.visibility="visible";
+          document.getElementById("a3").style.visibility="visible";
+          document.getElementById("a4").style.visibility="visible";
+          document.getElementById("a5").style.visibility="visible";
+
+          document.getElementById("bannlog").style.visibility="visible";
+          document.getElementById("bannlog").style.opacity="1";
+
+          document.getElementById("a1").style.left="25%";
+          document.getElementById("a2").style.left="25%";
+          document.getElementById("a3").style.left="25%";
+          document.getElementById("a4").style.left="25%";
+          document.getElementById("a5").style.left="25%";
+
+          document.getElementById("event1").style.visibility="hidden";
+          document.getElementById("event1").style.height="10px";
+          document.getElementById("event1").style.top="10px";
+          document.getElementById("event2").style.visibility="hidden";
+          document.getElementById("event2").style.height="10px";
+          document.getElementById("event2").style.top="10px";
+          document.getElementById("d").style.position="fixed";
+
+        }
+
+        }
+
+  </script>
+
+
+
+
+  <style>
+  body {
+    background-color: rgb(41, 44, 53);
+  }
+  body,html {
+    cursor:url(img/curb.png),auto;
+  }
+  a#gohomedesk,#event1:hover,#event2:hover {
+    cursor:url(img/cur.png),auto;
+  }
+  @media only screen and (min-width: 1025px) {
+
+    #d,a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: -100px;
+      top: -100px;
+      width: 0px;
+      height: 0px;
+    }
+    .menu-btn,.menu-icon,.navicon {
+      visibility: hidden;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+    #gohomedesk {
+      visibility: visible;
+      width: 200px;
+      height: auto;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      color: #fffffa;
+      font-size: 20px;
+      font-weight: 200;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      border: 2px solid #fffffa;
+      transition: all .2s ease-out;
+      display:block;
+      margin:0 auto;
+      margin-top: 80px;
+      background-color: rgb(41, 44, 53);
+      z-index: 3;
+    }
+    #gohomedesk:hover {
+      color:  rgb(41, 44, 53);
+      background-color: #fffffa;
+
+}
+    #title {
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fffffa;
+      font-size: 80px;
+      width: 80%;
+      height: auto;
+      font-weight: lighter;
+      font-style: normal;
+      text-align: center;
+      z-index: 100;
+      border-bottom: 2px solid #fffffa;
+      display:block;
+      margin:0 auto;
+      margin-top: 60px;
+      z-index: 3;
+    }
+   #timeline1 {
+     background-color: #fffffa;
+     width: 2px;
+     height: 80px;
+     display:block;
+     margin:0 auto;
+   }
+   #timeline2 {
+     width: 54%;
+     height: 80px;
+     border-top: 2px solid #fffffa;
+     border-left: 2px solid #fffffa;
+     border-right: 2px solid #fffffa;
+     position: absolute;
+     left: 0; right: 0; top: 378px;
+     margin: auto;
+   }
+   #event1 {
+     position: absolute;
+     top: 480px;
+     left: 3%;
+     width: 45%;
+     height: 340px;
+     background-color: rgb(250, 250, 250);
+     border-radius: 6px;
+     font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     -o-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+     box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+     -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+     -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+     cursor:url(../img/cur.png),auto;
+   }
+   #event1:hover {
+     top: 478px;
+     left: 2%;
+     width: 46%;
+     height: 344px;
+   }
+   #event2 {
+     overflow-y: scroll;
+     overflow-x: hidden;
+     position: absolute;
+     top: 480px;
+     right: 3%;
+     width: 45%;
+     height: 340px;
+     background-color: rgb(250, 250, 250);
+     border-radius: 6px;
+     font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+     -o-transition: all 0.2s ease-out;
+     transition: all 0.2s ease-out;
+     box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+     -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+     -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+     cursor:url(../img/cur.png),auto;
+   }
+   #event2:hover {
+     top: 478px;
+     right: 2%;
+     width: 46%;
+     height: 344px;
+   }
+   #date1 {
+     position:absolute;
+     top:-50px;
+     right:32px;
+     font-size:80px;
+     font-weight:100;
+   }
+   #date2 {
+     position:absolute;
+     top:90px;
+     right:45px;
+     font-size:18px;
+     font-weight:100;
+   }
+   #descri {
+     text-align:justify;
+     position:absolute;
+     left:5%;
+     top:50px;
+     width:60%;
+     font-size:19px;
+     font-weight:100
+   }
+   #bannlog {
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     width: 9%;
+     height: auto;
+     cursor:url(img/curb.png),auto;
+   }
+
+
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+  /* menu icon */
+
+ .menu-icon {
+ z-index: 1000000000022;
+ display: inline-block;
+ float: left;
+ padding: 50px 25px;
+ position: relative;
+ user-select: none;
+ }
+
+ .menu-icon .navicon {
+ background: #fffffa;
+ display: block;
+ height: 4px;
+ border-radius: 4px;
+ position: relative;
+ transition: .2s ease-out;
+ width: 80px;
+ }
+
+ .menu-icon .navicon:before,
+ .menu-icon .navicon:after {
+ background: #fffffa;
+ content: '';
+ display: block;
+ height: 100%;
+ position: absolute;
+ transition: all .2s ease-out;
+ width: 100%;
+ }
+
+ .menu-icon .navicon:before {
+ top: 25px;
+ border-radius: 4px;
+ }
+
+ .menu-icon .navicon:after {
+ top: -25px;
+ border-radius: 4px;
+ }
+
+ /* menu btn */
+
+ .menu-btn {
+ display: none;
+ }
+
+ .menu-btn:checked ~ .menu {
+ max-height: 240px;
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon {
+ background: transparent;
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon:before {
+ transform: rotate(-45deg);
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon:after {
+ transform: rotate(45deg);
+ }
+
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ top: 0;
+ }
+
+ a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+   visibility: hidden;
+   opacity: 1;
+   position: absolute;
+   width: 50%;
+   height: auto;
+   text-align: center;
+   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: #fffffa;
+   font-weight: 200;
+   font-size: 4rem;
+   text-decoration: none;
+ }
+
+ a#a1.amob {
+   top: 20%;
+   left: -110px;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+ }
+ a#a2.amob {
+   top: 33%;
+   left: -160px;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+ }
+ a#a3.amob {
+   top: 46%;
+   left: -210px;
+   -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   transition: all 0.4s ease-out;
+ }
+ a#a4.amob {
+   top: 59%;
+   left: -260px;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+ }
+ a#a5.amob {
+   top: 72%;
+   left: -310px;
+   -webkit-transition: all 0.6s ease-out;
+   -moz-transition: all 0.6s ease-out;
+   -o-transition: all 0.6s ease-out;
+   transition: all 0.6s ease-out;
+ }
+ #d {
+   position: absolute;
+   width: 100%;
+   height: 0px;
+   top: 0px;
+   left: 0px;
+   z-index: 10000;
+   background-color: rgb(41, 44, 53);
+   color: ;
+   -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   transition: all 0.4s ease-out;
+ }
+#gohomedesk {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+#title {
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fffffa;
+  font-size: 80px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10px;
+  height: auto;
+  font-weight: lighter;
+  text-align: center;
+  border-bottom: 2px solid #fffffa;
+  z-index: 3000;
+}
+#date1 {
+  position:absolute;
+  top:-90px;
+  right:32px;
+  font-size:6rem;
+  font-weight:100;
+}
+#date2 {
+  position:absolute;
+  top:90px;
+  right:45px;
+  font-size:1.2rem;
+  font-weight:200;
+}
+#descri {
+  text-align:justify;
+  position:absolute;
+  left:5%;
+  top:50px;
+  width:60%;
+  font-size:2.2rem;
+  font-weight:100
+}
+#event1 {
+  position: absolute;
+  top: 250px;
+  left: 4%;
+  width: 92%;
+  height: 610px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 6px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+}
+#event2 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 910px;
+  left: 4%;
+  width: 92%;
+  height: 610px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 6px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  cursor:url(../img/cur.png),auto;
+}
+#bannlog {
+  position: fixed;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  left: 0px; right: 0;
+  z-index: 1000000000;
+  top: 20px;
+  width: 11%;
+  height: auto;
+  cursor:url(img/curb.png),auto;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+}
+  </style>
+
+
+
+  <body>
+    <a href="home.html"><img id="bannlog"src="img/moblogo.png"></a>
+
+    <!--TITLE-->
+    <p id="title">CALENDRIER</p>
+    <!-- MENU DESK-->
+<a id="gohomedesk" href="home.html#d">RETOUR MENU</a>
+
+    <!-- MENU MOBI-->
+<input onclick="mmenu()" class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<div id="d">
+<a class="amob" id="a1" href="home.html">Menu</a>
+<a class="amob" id="a2" href="accueil.html">Accueil</a>
+<a class="amob" id="a3" href="comite.html">Comité</a>
+<a class="amob" id="a4" href="medias.html">Médias</a>
+<a class="amob" id="a5" href="mailto:clubdedebat@unige.ch?&subject=Ecris-nous%20!">Contact</a>
+</div>
+
+
+<div id="timeline1"></div>
+<div id="timeline2"></div>
+
+
+<span id="event1">
+ <p id="date1">19</p><p id="date2">décembre<br>2017</p><p id="descri"><b>Prochain Débat</b><br><br>La prochaine session de débat aura lieu le mardi 19 décembre 2017 à 18h15 <b style="font-weight:400;">en salle M4020</b> Uni-Mail.<br>
+   <br>Au plaisir de vous voir nombreux !<br><br><a href="link/cal.pdf" style="text-decoration:none;color:rgb(41, 44, 53);font-style:italic;font-weight:400;" target="_blank">Cliquez ici</a> pour prendre connaissance de tous les prochains débats.</p>
+</span>
+
+<span id="event2">
+ <p id="date1">DD</p><p id="date2">MM<br>YY</p><p id="descri"><b>Vacances universitaires</b><br><br>Nous reprendrons nos activités hebdomadaires et événementielles dès la rentrée du semestre de Printemps. <br><br>Le comité vous prépare plus de 6 événements majeurs le semestre prochain ! <br>Nous vous tiendrons au courant !</p>
+</span>
+
+
+  </body>
+</html>

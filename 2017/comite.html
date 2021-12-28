@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="img/CGDcopy.png" type="image">
+    <meta charset="utf-8">
+    <title>Notre Comité</title>
+  </head>
+  <script>
+
+        var nbclck=0;
+        function mmenu() {
+        nbclck++;
+
+
+
+        if (nbclck%2==0) {
+
+          document.getElementById("d").style.height="0px";
+
+          document.body.style.overflow="visible";
+          document.body.style.position="relative";
+
+          document.getElementById("a1").style.visibility="hidden";
+          document.getElementById("a2").style.visibility="hidden";
+          document.getElementById("a3").style.visibility="hidden";
+          document.getElementById("a4").style.visibility="hidden";
+          document.getElementById("a5").style.visibility="hidden";
+
+          document.getElementById("bannlog").style.visibility="hidden";
+          document.getElementById("bannlog").style.opacity="0";
+
+
+          document.getElementById("a1").style.left="-110px";
+          document.getElementById("a2").style.left="-160px";
+          document.getElementById("a3").style.left="-210px";
+          document.getElementById("a4").style.left="-260px";
+          document.getElementById("a5").style.left="-310px";
+
+          document.getElementById("table").style.visibility="visible";
+          document.getElementById("titleac").style.visibility="visible";
+          document.getElementById("anciencom").style.visibility="visible";
+          document.getElementById("table").style.height="100%";
+          document.getElementById("titleac").style.height="auto";
+          document.getElementById("anciencom").style.height="auto";
+          document.getElementById("table").style.top="220px";
+          document.getElementById("titleac").style.top="2300px";
+          document.getElementById("anciencom").style.top="2500px";
+          document.getElementById("d").style.position="absolute";
+    }
+
+        else {
+
+          document.getElementById("d").style.height="100%";
+
+          document.body.style.overflow="hidden";
+          document.body.style.position="fixed";
+
+          document.getElementById("a1").style.visibility="visible";
+          document.getElementById("a2").style.visibility="visible";
+          document.getElementById("a3").style.visibility="visible";
+          document.getElementById("a4").style.visibility="visible";
+          document.getElementById("a5").style.visibility="visible";
+
+          document.getElementById("bannlog").style.visibility="visible";
+          document.getElementById("bannlog").style.opacity="1";
+
+
+          document.getElementById("a1").style.left="25%";
+          document.getElementById("a2").style.left="25%";
+          document.getElementById("a3").style.left="25%";
+          document.getElementById("a4").style.left="25%";
+          document.getElementById("a5").style.left="25%";
+
+          document.getElementById("table").style.visibility="hidden";
+          document.getElementById("titleac").style.visibility="hidden";
+          document.getElementById("anciencom").style.visibility="hidden";
+          document.getElementById("table").style.height="0px";
+          document.getElementById("titleac").style.height="0px";
+          document.getElementById("anciencom").style.height="0px";
+          document.getElementById("table").style.top="10px";
+          document.getElementById("titleac").style.top="10px";
+          document.getElementById("anciencom").style.top="10px";
+          document.getElementById("d").style.position="fixed";
+
+
+        }
+
+        }
+
+  </script>
+
+
+
+
+  <style>
+  body,html{
+    cursor:url(img/cur.png),auto;
+  }
+  a#gohomedesk {
+    cursor:url(img/curb.png),auto;
+  }
+  @media only screen and (min-width: 1025px) {
+    html,body,a {
+      cursor:url(img/cur.png),auto;
+    }
+    #idd,td {
+      filter: grayscale(100);
+      z-index: 5;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all .3s ease-out;
+    }
+    #idd:hover {
+      transform: scale(1.1);
+    }
+    #d,a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: -100px;
+      top: -100px;
+      width: 0px;
+      height: 0px;
+    }
+    .menu-btn,.menu-icon,.navicon {
+      visibility: hidden;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+    #gohomedesk {
+      visibility: visible;
+      width: 200px;
+      height: auto;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 200;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      border: 2px solid black;
+      transition: all .2s ease-out;
+      display:block;
+      margin:0 auto;
+      margin-top: 50px;
+      background-color: #fffffa;
+      z-index: 3;
+    }
+    #gohomedesk:hover {
+      color: #fffffa;
+      background-color: black;
+
+}
+    #title {
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: black;
+      font-size: 80px;
+      width: 80%;
+      height: auto;
+      font-weight: lighter;
+      font-style: normal;
+      text-align: center;
+      z-index: 100;
+      border-bottom: 2px solid black;
+      display:block;
+      margin:0 auto;
+      margin-top: 60px;
+      z-index: 3;
+    }
+    #table {
+      position:absolute;
+      top:300px;
+      left:8%;
+      width:84%;
+    }
+    .tr {
+      height:400px;
+    }
+    .td {
+      line-height:2;
+      text-align:center;
+      color:black;
+      font-size:16px;
+      font-weight:200;
+      font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    #idd {
+      width: 300px;
+      height: 300px;
+      border-radius: 1000px;
+    }
+    #ch:hover {
+      text-decoration: underline;
+    }
+    #honneur1 {
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: black;
+      font-size: 70px;
+      width: 80%;
+      height: auto;
+      font-weight: lighter;
+      font-style: normal;
+      text-align: center;
+      z-index: 100;
+      border-bottom: 2px solid black;
+      position: absolute;
+      top: 2000px;
+      left: 10%;
+      z-index: 3;
+    }
+    #honneur2 {
+      position: absolute;
+      top: 2250px;
+      left: 10%;
+      width: 45%;
+      z-index: 3;
+      line-height:1.5;
+      text-align: left;
+      color:black;
+      font-size:1.6rem;
+      font-weight:200;
+      font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-decoration: none;
+    }
+    #titleac {
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: black;
+      font-size: 70px;
+      width: 80%;
+      height: auto;
+      font-weight: lighter;
+      font-style: normal;
+      text-align: center;
+      z-index: 100;
+      border-bottom: 2px solid black;
+      position: absolute;
+      top: 2450px;
+      left: 10%;
+      z-index: 3;
+    }
+    #anciencom {
+      position: absolute;
+      top: 2650px;
+      left: 10%;
+      width: auto;
+      z-index: 3;
+      line-height:1.5;
+      text-align: left;
+      color:black;
+      font-size:1.6rem;
+      font-weight:200;
+      font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      text-decoration: none;
+    }
+    #yrs {
+      line-height: 150px;
+      font-size:4rem;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    #bannlog {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 9%;
+      height: auto;
+      cursor:url(img/curb.png),auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+  /* menu icon */
+
+ .menu-icon {
+ z-index: 1000000000022;
+ display: inline-block;
+ float: left;
+ padding: 50px 25px;
+ position: relative;
+ user-select: none;
+ }
+
+ .menu-icon .navicon {
+ background: black;
+ display: block;
+ height: 4px;
+ border-radius: 4px;
+ position: relative;
+ transition: .2s ease-out;
+ width: 80px;
+ }
+
+ .menu-icon .navicon:before,
+ .menu-icon .navicon:after {
+ background: black;
+ content: '';
+ display: block;
+ height: 100%;
+ position: absolute;
+ transition: all .2s ease-out;
+ width: 100%;
+ }
+
+ .menu-icon .navicon:before {
+ top: 25px;
+ border-radius: 4px;
+ }
+
+ .menu-icon .navicon:after {
+ top: -25px;
+ border-radius: 4px;
+ }
+
+ /* menu btn */
+
+ .menu-btn {
+ display: none;
+ }
+
+ .menu-btn:checked ~ .menu {
+ max-height: 240px;
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon {
+ background: transparent;
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon:before {
+ transform: rotate(-45deg);
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon:after {
+ transform: rotate(45deg);
+ }
+
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ top: 0;
+ }
+
+ a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+   visibility: hidden;
+   opacity: 1;
+   position: absolute;
+   width: 50%;
+   height: auto;
+   text-align: center;
+   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: black;
+   font-weight: 200;
+   font-size: 4rem;
+   text-decoration: none;
+ }
+
+ a#a1.amob {
+   top: 20%;
+   left: -110px;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+ }
+ a#a2.amob {
+   top: 33%;
+   left: -160px;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+ }
+ a#a3.amob {
+   top: 46%;
+   left: -210px;
+   -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   transition: all 0.4s ease-out;
+ }
+ a#a4.amob {
+   top: 59%;
+   left: -260px;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+ }
+ a#a5.amob {
+   top: 72%;
+   left: -310px;
+   -webkit-transition: all 0.6s ease-out;
+   -moz-transition: all 0.6s ease-out;
+   -o-transition: all 0.6s ease-out;
+   transition: all 0.6s ease-out;
+ }
+ #d {
+   position: absolute;
+   width: 100%;
+   height: 0px;
+   top: 0px;
+   left: 0px;
+   z-index: 10000;
+   background-color: #fffffa;
+   color: ;
+   -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   transition: all 0.4s ease-out;
+ }
+#gohomedesk {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+#title {
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 80px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10px;
+  height: auto;
+  font-weight: lighter;
+  text-align: center;
+  border-bottom: 2px solid black;
+  z-index: 3000;
+}
+#table {
+  position:absolute;
+  top:220px;
+  left:0px;
+  width:100%;
+  height:100%;
+}
+.tr {
+  height: 500px;
+}
+.td {
+  line-height:1.2;
+  text-align:center;
+  color:black;
+  font-size:2.2rem;
+  font-weight:200;
+  font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#idd {
+  filter: grayscale(100);
+  width: 300px;
+  height: 300px;
+  border-radius: 1000px;
+}
+#honneur1 {
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 70px;
+  width: 80%;
+  height: auto;
+  font-weight: lighter;
+  font-style: normal;
+  text-align: center;
+  z-index: 100;
+  border-bottom: 2px solid black;
+  position: absolute;
+  top: 2300px;
+  left: 10%;
+  z-index: 3;
+}
+#honneur2 {
+  position: absolute;
+  top: 2500px;
+  left: 10%;
+  width: 80%;
+  z-index: 3;
+  line-height:1.5;
+  text-align: left;
+  color:black;
+  font-size:2.2rem;
+  font-weight:200;
+  font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+#titleac {
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  font-size: 70px;
+  width: 80%;
+  height: auto;
+  font-weight: lighter;
+  font-style: normal;
+  text-align: center;
+  z-index: 100;
+  border-bottom: 2px solid black;
+  position: absolute;
+  top: 2750px;
+  left: 10%;
+  z-index: 3;
+}
+#anciencom {
+  position: absolute;
+  top: 2950px;
+  left: 10%;
+  width: auto;
+  z-index: 3;
+  line-height:1.5;
+  text-align: left;
+  color:black;
+  font-size:2.2rem;
+  font-weight:200;
+  font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+#yrs {
+  line-height: 150px;
+  font-size:4rem;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#bannlog {
+  position: fixed;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  left: 0px; right: 0;
+  z-index: 1000000000;
+  top: 20px;
+  width: 11%;
+  height: auto;
+  cursor:url(img/curb.png),auto;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+}
+  </style>
+
+
+
+  <body style="background-color: #fffffa;">
+    <a href="home.html"><img id="bannlog"src="img/CGDcopy.png"></a>
+    <!--TITLE-->
+    <p id="title">COMITÉ</p>
+    <!-- MENU DESK-->
+<a id="gohomedesk" href="home.html#d">RETOUR MENU</a>
+
+    <!-- MENU MOBI-->
+<input onclick="mmenu()" class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<div id="d">
+<a class="amob" id="a1" href="home.html">Menu</a>
+<a class="amob" id="a2" href="accueil.html">Accueil</a>
+<a class="amob" id="a3" href="calendrier.html">Calendrier</a>
+<a class="amob" id="a4" href="medias.html">Médias</a>
+<a class="amob" id="a5" href="mailto:clubdedebat@unige.ch?&subject=Ecris-nous%20!">Contact</a>
+</div>
+
+                <table id="table">
+                 <tr class="tr">
+                   <td class="td" colspan="2"><a href="profil/florianparini.html"><img id="idd" src="img/florian.png"></a><br><i>Président</i><br><a id="a">Florian Parini</a></td>
+                 </tr>
+                 <tr class="tr">
+                   <td class="td"><a href="profil/williamwegener.html"><img id="idd" src="img/william.png"></a><br><i>Vice-président</i><br><a id="a">William Wegener</a></td>
+                   <td class="td"><a href="profil/laurieliccardo.html"><img id="idd" src="img/laurie.png"></a><br><i>Vice-présidente</i><br><a id="a">Laurie Liccardo</a></td>
+                 </tr>
+                 <tr class="tr">
+                   <td class="td"><a href="profil/ameliebon.html"><img id="idd" src="img/amelie.png"></a><br><i>Secrétaire</i><br><a id="a">Amélie Bon</a></td>
+                   <td class="td"><a href="profil/damienhussy.html"><img id="idd" src="img/damien.png"></a><br><i>Trésorier</i><br><a id="a">Damien Hussy</a></td>
+                 </tr>
+                   <tr class="tr">
+                   <td class="td" colspan="2"><a href="profil/hugohoubart.html"><img id="idd" src="img/hugo.png"></a><br><i>Chargé de communication</i><br><a id="a">Hugo Houbart</a></td>
+                 </tr>
+               </table>
+
+
+
+               <p id="honneur1">MEMBRES D'HONNEUR</p>
+
+               <table id="honneur2">
+                 <tr>
+                   <td>Mai 2017<br>Mai 2017<br>Mai 2017<br>Décembre 2017</td>
+                   <td><a href="profil/dinovajzovic.html" id="ch">Dino Vajzovic</a><br><a href="#" id="ch">Peter Sob</a><br><a href="profil/electreeliez.html" id="ch">Electre Eliez</a><br><a href="" id="ch">Michael Netter</a></td>
+                 </tr>
+               </table>
+
+
+
+
+                 <p id="titleac">COMITÉS PRÉCÉDENTS</p>
+
+                 <table id="anciencom">
+                   <tr>
+                     <td id="yrs">2016 - 2017</td>
+                   </tr>
+                   <tr>
+                     <td>Président :<br>Vice-Président :<br>Vice-Présidente :<br>Trésorier :<br>Secrétaire-Webmaster :<br>Membre Libre :<br>Gréffière :</td>
+                     <td><a>Michael Netter</a><br><a >Florian Parini</a><br><a>Laurie Liccardo</a><br><a>Jonathan Barras - Davide Navarro</a><br><a>Artem Emets - William Wegener</a><br><a>Guillaume Brulhart</a><br><a>Sara Lavassani</a></td>
+                   </tr>
+
+
+                   <tr>
+                     <td id="yrs">2015 - 2016</td>
+                   </tr>
+                   <tr>
+                     <td>Présidente :<br>Vice-Président :<br>Vice-Présidente :<br>Trésorier :<br>Secrétaire :<br>Membre Libre :</td>
+                     <td><a>Electre Eliez</a><br><a >Brendan Le Marchand</a><br><a>Johana Gamaz</a><br><a>Suhel J. Rosa - Artem Emets</a><br><a>Rachel Fouka</a><br><a>Clémentine Verona</a></td>
+                   </tr>
+
+
+                   <tr>
+                     <td id="yrs">2014 - 2015</td>
+                   </tr>
+                   <tr>
+                     <td>Président :<br>Vice-Président :<br>Vice-Président :<br>Trésorière :<br>Secrétaire :<br>Membre Libre :</td>
+                     <td><a>Pablo Lazaro</a><br><a >Kevin Marcato & Brendan L.M.</a><br><a>Suhel J. Rosa & Electre Eliez</a><br><a>Nadine A.</a><br><a>Maya M.</a><br><a>Julia Süessmann - Romain M.</a></td>
+                   </tr>
+
+
+                   <tr>
+                     <td id="yrs">2013 - 2014</td>
+                   </tr>
+                   <tr>
+                     <td>Président :<br>Vice-Président :<br>Vice-Présidente :<br>Membres du bureau :<br>Trésorier :</td>
+                     <td>Peter Sob<br>Dino Vajzovic<br>Julia Suessmann<br>Ayan L., Kevin M. & Pablo L.<br>Benjamin Ley - Nadine A.</td>
+                   </tr>
+
+
+                   <tr>
+                     <td id="yrs">2013 - 2013</td>
+                   </tr>
+                   <tr>
+                     <td>Président :<br>Vice-Président :<br>Vice-Président :<br>Directeur :<br>Directeur :<br>Greffière :<br><br></td>
+                     <td><a>Jan-Gero A. Hannemann</a><br><a >Peter Sob</a><br><a>Dino Vajzovic</a><br><a>Kevin Marcato</a><br><a>Lotfi Haouaya</a><br><a>Julia Suessmann</a><br><br></td>
+                   </tr>
+                 </table>
+
+
+  </body>
+
+
+</html>

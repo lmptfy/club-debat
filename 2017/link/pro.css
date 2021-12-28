@@ -1,0 +1,395 @@
+
+    a {
+      color: black;
+      text-decoration: none;
+      -webkit-transition: all .3s ease-out;
+      -moz-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out;
+    }
+    a:hover {
+      color: #ea62b2;
+    }
+    body,a {
+      cursor:url(../img/cur.png),auto;
+    }
+    #deux {
+      cursor:url(../img/curb.png),auto;
+    }
+
+
+
+
+  @media only screen and (min-width: 1025px) {
+    #d,a#a0.amob,a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          left: -100px;
+          top: -100px;
+          width: 0px;
+          height: 0px;
+        }
+        .menu-btn,.menu-icon,.navicon {
+          visibility: hidden;
+          opacity: 0;
+          width: 1px;
+          height: 1px;
+        }
+
+      #un {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        min-height: 940px;
+        height: 100%;
+        width: 100%;
+        background-color: #E6E9EC;
+        z-index: 1;
+      }
+
+      #deux {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 330px;
+        width: 100%;
+        z-index: 2;
+        background: rgb(41, 44, 53);
+        background: -webkit-linear-gradient(left top, rgb(41, 44, 53), #525454);
+        background: -o-linear-gradient(bottom right, rgb(41, 44, 53), #525454);
+        background: -moz-linear-gradient(bottom right, rgb(41, 44, 53), #525454);
+        background: linear-gradient(to bottom right, rgb(41, 44, 53), #525454);
+    }
+
+      #trois {
+        position: absolute;
+        left: 20%;
+        top: 560px;
+        width: 60%;
+        background-color: white;
+        z-index: 3;
+        overflow-y: scroll;
+        font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.3;
+        color: black;
+        text-align: justify;
+        border-radius: 3px;
+      }
+
+      #quatre {
+        position: absolute;
+        left: 20%;
+        top: 140px;
+        height: 380px;
+        width: 60%;
+        background-color: white;
+        z-index: 3;
+        font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        color: black;
+        border-radius: 3px;
+    }
+
+      #cinq {
+        position: absolute;
+        top: 10px; left: 0; right:0;
+        margin: auto;
+        height: 310px;
+        width: 310px;
+        border-radius: 1000px;
+        z-index: 5;
+        filter: grayscale(100px);
+    }
+    #pp {
+    margin-top:195px;
+    font-size:3rem;
+    }
+    #ppp {
+    margin-top:-40px;
+    font-size:2rem;
+    }
+    #pppp {
+    font-size:1.3rem;
+    line-height: 10px;
+    }
+    #bannlog {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 9%;
+  height: auto;
+  z-index: 10;
+  cursor:url(../img/curb.png),auto;
+}
+#pd {
+  width:80%;
+  position:absolute;
+  top:25px;
+  left:10%;
+}
+
+  }
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 1025px) {
+    body {
+      overflow: visible;
+    }
+
+      /* menu icon */
+
+     .menu-icon {
+     z-index: 1000000000022;
+     display: inline-block;
+     float: left;
+     padding: 50px 25px;
+     position: relative;
+     user-select: none;
+     }
+
+     .menu-icon .navicon {
+     background: white;
+     display: block;
+     height: 4px;
+     border-radius: 4px;
+     position: relative;
+     transition: .2s ease-out;
+     width: 80px;
+     }
+
+     .menu-icon .navicon:before,
+     .menu-icon .navicon:after {
+     background: white;
+     content: '';
+     display: block;
+     height: 100%;
+     position: absolute;
+     transition: all .2s ease-out;
+     width: 100%;
+     }
+
+     .menu-icon .navicon:before {
+     top: 25px;
+     border-radius: 4px;
+     }
+
+     .menu-icon .navicon:after {
+     top: -25px;
+     border-radius: 4px;
+     }
+
+     /* menu btn */
+
+     .menu-btn {
+     display: none;
+     }
+
+     .menu-btn:checked ~ .menu {
+     max-height: 240px;
+     }
+
+     .menu-btn:checked ~ .menu-icon .navicon {
+     background: transparent;
+     }
+
+     .menu-btn:checked ~ .menu-icon .navicon:before {
+     transform: rotate(-45deg);
+     }
+
+     .menu-btn:checked ~ .menu-icon .navicon:after {
+     transform: rotate(45deg);
+     }
+
+     .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+     .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+     top: 0;
+     }
+
+     a#a0.amob,a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+       visibility: hidden;
+       opacity: 1;
+       position: absolute;
+       width: 50%;
+       height: auto;
+       text-align: center;
+       font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+       color: white;
+       font-weight: 200;
+       font-size: 4rem;
+       text-decoration: none;
+     }
+
+     a#a0.amob {
+       top: 15%;
+       left: -110px;
+       -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+       -o-transition: all 0.2s ease-out;
+       transition: all 0.2s ease-out;
+     }
+     a#a1.amob {
+       top: 27%;
+       left: -110px;
+       -webkit-transition: all 0.2s ease-out;
+       -moz-transition: all 0.2s ease-out;
+       -o-transition: all 0.2s ease-out;
+       transition: all 0.2s ease-out;
+     }
+     a#a2.amob {
+       top: 39%;
+       left: -160px;
+       -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+       transition: all 0.3s ease-out;
+     }
+     a#a3.amob {
+       top: 51%;
+       left: -210px;
+       -webkit-transition: all 0.4s ease-out;
+       -moz-transition: all 0.4s ease-out;
+       -o-transition: all 0.4s ease-out;
+       transition: all 0.4s ease-out;
+     }
+     a#a4.amob {
+       top: 63%;
+       left: -260px;
+       -webkit-transition: all 0.5s ease-out;
+       -moz-transition: all 0.5s ease-out;
+       -o-transition: all 0.5s ease-out;
+       transition: all 0.5s ease-out;
+     }
+     a#a5.amob {
+       top: 75%;
+       left: -310px;
+       -webkit-transition: all 0.6s ease-out;
+       -moz-transition: all 0.6s ease-out;
+       -o-transition: all 0.6s ease-out;
+       transition: all 0.6s ease-out;
+     }
+     #d {
+       position: absolute;
+       width: 100%;
+       height: 0px;
+       top: 0px;
+       left: 0px;
+       z-index: 10000;
+       background-color: black;
+       color: white;
+       -webkit-transition: all 0.4s ease-out;
+       -moz-transition: all 0.4s ease-out;
+       -o-transition: all 0.4s ease-out;
+       transition: all 0.4s ease-out;
+     }
+
+
+      #un {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        height: 105.7%;
+        width: 100%;
+        background-color: #E6E9EC;
+        z-index: 1;
+      }
+
+      #deux {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 500px;
+        width: 100%;
+        z-index: 2;
+        background: -webkit-linear-gradient(left top, rgb(41, 44, 53), #525454);
+        background: -o-linear-gradient(bottom right, rgb(41, 44, 53), #525454);
+        background: -moz-linear-gradient(bottom right, rgb(41, 44, 53), #525454);
+        background: linear-gradient(to bottom right, rgb(41, 44, 53), #525454);
+    }
+
+      #trois {
+        position: absolute;
+        left: 4%;
+        top: 885px;
+        margin-bottom: 50px;
+        width: 92%;
+        background-color: white;
+        z-index: 3;
+        font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 2.3rem;
+        line-height: 1.1;
+        color: black;
+        text-align: justify;
+        border-radius: 3px;
+      }
+
+      #quatre {
+        position: absolute;
+        left: 4%;
+        top: 330px;
+        height: 520px;
+        width: 92%;
+        background-color: white;
+        z-index: 3;
+        font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        color: black;
+        border-radius: 3px;
+    }
+
+      #cinq {
+        position: absolute;
+        top: 70px; left: 0; right:0;
+        margin: auto;
+        height: 450px;
+        width: 450px;
+        border-radius: 1000px;
+        z-index: 5;
+    }
+    #pp {
+    margin-top:235px;
+    font-size:4rem;
+    }
+    #ppp {
+    margin-top:-50px;
+    font-size:3rem;
+    }
+    #pppp {
+    margin-top:2%;
+    font-size:2rem;
+    }
+    #bannlog {
+  position: fixed;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  left: 0px; right: 0;
+  z-index: 1000000000;
+  top: 20px;
+  width: 11%;
+  height: auto;
+  cursor:url(../img/curb.png),auto;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+#pd {
+  width:80%;
+  position:absolute;
+  top:25px;
+  left:10%;
+}
+
+
+  }

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="img/CGDcopy.png" type="image">
+    <meta charset="utf-8">
+    <title>Accueil</title>
+  </head>
+  <script>
+
+        var nbclck=0;
+        function mmenu() {
+        nbclck++;
+
+
+
+        if (nbclck%2==0) {
+
+          document.getElementById("d").style.height="0px";
+
+          document.body.style.overflow="visible";
+          document.body.style.height="auto";
+          document.body.style.position="relative";
+
+
+          document.getElementById("a1").style.visibility="hidden";
+          document.getElementById("a2").style.visibility="hidden";
+          document.getElementById("a3").style.visibility="hidden";
+          document.getElementById("a4").style.visibility="hidden";
+          document.getElementById("a5").style.visibility="hidden";
+
+          document.getElementById("bannlog").style.visibility="hidden";
+          document.getElementById("bannlog").style.opacity="0";
+
+          document.getElementById("a1").style.left="-110px";
+          document.getElementById("a2").style.left="-160px";
+          document.getElementById("a3").style.left="-210px";
+          document.getElementById("a4").style.left="-260px";
+          document.getElementById("a5").style.left="-310px";
+
+          document.getElementById("hidd").style.visibility="visible";
+          document.getElementById("timeline").style.height="2880px";
+          document.getElementById("timeline").style.top="220px";
+          document.getElementById("t1").style.height="300px";
+          document.getElementById("t2").style.height="300px";
+          document.getElementById("t3").style.height="300px";
+          document.getElementById("t4").style.height="300px";
+          document.getElementById("t5").style.height="300px";
+          document.getElementById("p1").style.top="350px";
+          document.getElementById("p2").style.top="850px";
+          document.getElementById("p3").style.top="1350px";
+          document.getElementById("p4").style.top="1850px";
+          document.getElementById("p5").style.top="2350px";
+          document.getElementById("t1").style.top="300px";
+          document.getElementById("t2").style.top="800px";
+          document.getElementById("t3").style.top="1300px";
+          document.getElementById("t4").style.top="1800px";
+          document.getElementById("t5").style.top="2300px";
+        }
+
+        else {
+
+          document.getElementById("d").style.height="100%";
+
+          document.body.style.overflow="hidden";
+          document.body.style.height="99%";
+          document.body.style.position="fixed";
+
+
+          document.getElementById("a1").style.visibility="visible";
+          document.getElementById("a2").style.visibility="visible";
+          document.getElementById("a3").style.visibility="visible";
+          document.getElementById("a4").style.visibility="visible";
+          document.getElementById("a5").style.visibility="visible";
+
+          document.getElementById("bannlog").style.visibility="visible";
+          document.getElementById("bannlog").style.opacity="1";
+
+          document.getElementById("a1").style.left="25%";
+          document.getElementById("a2").style.left="25%";
+          document.getElementById("a3").style.left="25%";
+          document.getElementById("a4").style.left="25%";
+          document.getElementById("a5").style.left="25%";
+
+          document.getElementById("hidd").style.visibility="visible";
+          document.getElementById("timeline").style.height="0px";
+          document.getElementById("timeline").style.top="100px";
+          document.getElementById("t1").style.height="0px";
+          document.getElementById("t2").style.height="0px";
+          document.getElementById("t3").style.height="0px";
+          document.getElementById("t4").style.height="0px";
+          document.getElementById("t5").style.height="0px";
+          document.getElementById("p1").style.top="100px";
+          document.getElementById("p2").style.top="100px";
+          document.getElementById("p3").style.top="100px";
+          document.getElementById("p4").style.top="100px";
+          document.getElementById("p5").style.top="100px";
+          document.getElementById("t1").style.top="100px";
+          document.getElementById("t2").style.top="100px";
+          document.getElementById("t3").style.top="100px";
+          document.getElementById("t4").style.top="100px";
+          document.getElementById("t5").style.top="100px";
+        }
+
+        }
+
+  </script>
+
+
+
+
+  <style>
+  body,html,a {
+    cursor:url(img/cur.png),auto;
+  }
+  img {
+    cursor:url(img/curb.png),auto;
+  }
+  @media only screen and (min-width: 1025px) {
+
+    #d,a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: -100px;
+      top: -100px;
+      width: 0px;
+      height: 0px;
+    }
+    .menu-btn,.menu-icon,.navicon {
+      visibility: hidden;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+    #gohomedesk {
+      visibility: visible;
+      width: 200px;
+      height: auto;
+      line-height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none;
+      color: #C49C0D;
+      font-size: 20px;
+      font-weight: 200;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      border: 2px solid #C49C0D;
+      transition: all .2s ease-out;
+      display:block;
+      margin:0 auto;
+      margin-top: 80px;
+      background-color: white;
+      z-index: 3;
+    }
+    #gohomedesk:hover {
+      color: white;
+      background-color: #C49C0D;
+
+}
+    #title {
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #C49C0D;
+      font-size: 80px;
+      width: 80%;
+      height: auto;
+      font-weight: lighter;
+      font-style: normal;
+      text-align: center;
+      z-index: 100;
+      border-bottom: 2px solid #C49C0D;
+      display:block;
+      margin:0 auto;
+      margin-top: 60px;
+      z-index: 3;
+    }
+    #timeline {
+      background-color: #C49C0D;
+      width: 2px;
+      height: 1400px;
+      display:block;
+      margin:0 auto;
+    }
+
+    #p1 {
+      height: 2px;
+      width: 17%;
+      background-color: black;
+      position: absolute;
+      right: 50.05%;
+      top: 400px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t1 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      left: 11%;
+      top: 350px;
+      height: 300px;
+      width: 20%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    #p2 {
+      height: 2px;
+      width: 15%;
+      background-color: black;
+      position: absolute;
+      left: 50.05%;
+      top: 600px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t2 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      right: 11%;
+      top: 550px;
+      height: 300px;
+      width: 22.5%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    #p3 {
+      height: 2px;
+      width: 10.6%;
+      background-color: black;
+      position: absolute;
+      right: 50.05%;
+      top: 850px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t3 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      left: 11%;
+      top: 800px;
+      height: 300px;
+      width: 27%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+
+    #p4 {
+      height: 2px;
+      width: 15.6%;
+      background-color: black;
+      position: absolute;
+      left: 50.05%;
+      top: 1150px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t4 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      right: 11%;
+      top: 1115px;
+      height: 300px;
+      width: 22%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 2.3;
+    }
+
+    #p5 {
+      height: 2px;
+      width: 10.6%;
+      background-color: black;
+      position: absolute;
+      right: 50.05%;
+      top: 1350px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t5 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      left: 11%;
+      top: 1315px;
+      height: 400px;
+      width: 27%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.6;
+    }
+    #p6 {
+      height: 2px;
+      width: 15.6%;
+      background-color: black;
+      position: absolute;
+      left: 50.05%;
+      top: 1500px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t6 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      right: 11%;
+      top: 1450px;
+      height: 300px;
+      width: 22%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.9;
+    }
+    #p7 {
+      height: 2px;
+      width: 15.6%;
+      background-color: black;
+      position: absolute;
+      right: 50.05%;
+      top: 1600px;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: black;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #t7 {
+      position: absolute;
+      border-top: 1px solid #C49C0D;
+      left: 11%;
+      top: 1570px;
+      height: 300px;
+      width: 22%;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      text-align: justify;
+      line-height: 1.9;
+    }
+    #bannlog {
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 9%;
+      height: auto;
+      cursor:url(img/curb.png),auto;
+    }
+
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+  /* menu icon */
+
+ .menu-icon {
+ z-index: 1000000000022;
+ display: inline-block;
+ float: left;
+ padding: 50px 25px;
+ position: relative;
+ user-select: none;
+ }
+
+ .menu-icon .navicon {
+ background: #C49C0D;
+ display: block;
+ height: 4px;
+ border-radius: 4px;
+ position: relative;
+ transition: .2s ease-out;
+ width: 80px;
+ }
+
+ .menu-icon .navicon:before,
+ .menu-icon .navicon:after {
+ background: #C49C0D;
+ content: '';
+ display: block;
+ height: 100%;
+ position: absolute;
+ transition: all .2s ease-out;
+ width: 100%;
+ }
+
+ .menu-icon .navicon:before {
+ top: 25px;
+ border-radius: 4px;
+ }
+
+ .menu-icon .navicon:after {
+ top: -25px;
+ border-radius: 4px;
+ }
+
+ /* menu btn */
+
+ .menu-btn {
+ display: none;
+ }
+
+ .menu-btn:checked ~ .menu {
+ max-height: 240px;
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon {
+ background: transparent;
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon:before {
+ transform: rotate(-45deg);
+ }
+
+ .menu-btn:checked ~ .menu-icon .navicon:after {
+ transform: rotate(45deg);
+ }
+
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+ .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ top: 0;
+ }
+
+ a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+   visibility: hidden;
+   opacity: 1;
+   position: absolute;
+   width: 50%;
+   height: auto;
+   text-align: center;
+   font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   color: #C49C0D;
+   font-weight: 200;
+   font-size: 4rem;
+   text-decoration: none;
+ }
+
+ a#a1.amob {
+   top: 20%;
+   left: -110px;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   -o-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+ }
+ a#a2.amob {
+   top: 33%;
+   left: -160px;
+   -webkit-transition: all 0.3s ease-out;
+   -moz-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+ }
+ a#a3.amob {
+   top: 46%;
+   left: -210px;
+   -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   transition: all 0.4s ease-out;
+ }
+ a#a4.amob {
+   top: 59%;
+   left: -260px;
+   -webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+   -o-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out;
+ }
+ a#a5.amob {
+   top: 72%;
+   left: -310px;
+   -webkit-transition: all 0.6s ease-out;
+   -moz-transition: all 0.6s ease-out;
+   -o-transition: all 0.6s ease-out;
+   transition: all 0.6s ease-out;
+ }
+ #d {
+   position: fixed;
+   width: 100%;
+   height: 0px;
+   top: 0px;
+   left: 0px;
+   z-index: 10000;
+   background-color: white;
+   color: ;
+   -webkit-transition: all 0.4s ease-out;
+   -moz-transition: all 0.4s ease-out;
+   -o-transition: all 0.4s ease-out;
+   transition: all 0.4s ease-out;
+ }
+#gohomedesk {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+#title {
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #C49C0D;
+  font-size: 80px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10px;
+  height: auto;
+  font-weight: lighter;
+  text-align: center;
+  border-bottom: 2px solid #C49C0D;
+  z-index: 3000;
+}
+#timeline {
+  background-color: #C49C0D;
+  width: 2px;
+  height: 2880px;
+  position: absolute;
+  left: 10%;
+  top: 220px;
+}
+#p1 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 350px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.8;
+  text-align: center;
+}
+#t1 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 300px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+#p2 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 660px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+}
+#t2 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 610px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+#p3 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 1550px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+}
+#t3 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 1500px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+#p4 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 2200px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+}
+#t4 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 2150px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+#p5 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 2450px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+}
+#t5 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 2400px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.6;
+}
+#p6 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 2750px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+}
+#t6 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 2700px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+#p7 {
+  height: 2px;
+  width: 19.95%;
+  background-color: black;
+  position: absolute;
+  left: 10.05%;
+  top: 3050px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  line-height: 1.4;
+  text-align: center;
+}
+#t7 {
+  position: absolute;
+  border-top: 1px solid #C49C0D;
+  left: 33%;
+  top: 3000px;
+  height: 300px;
+  width: 57%;
+  color: black;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2.2rem;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#bannlog {
+  position: fixed;
+  margin: auto;
+  opacity: 0;
+  visibility: hidden;
+  left: 0px; right: 0;
+  z-index: 1000000000;
+  top: 20px;
+  width: 11%;
+  height: auto;
+  cursor:url(img/curb.png),auto;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+#hidd {
+  visibility: visible;
+}
+
+}
+  </style>
+
+
+
+  <body>
+    <a href="home.html"><img id="bannlog"src="img/logodor.png"></a>
+    <!--TITLE-->
+    <p id="title">ACCUEIL</p>
+    <!-- MENU DESK-->
+<a id="gohomedesk" href="home.html#d">RETOUR MENU</a>
+
+    <!-- MENU MOBI-->
+<input onclick="mmenu()" class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<div id="d">
+<a class="amob" id="a1" href="home.html">Menu</a>
+<a class="amob" id="a2" href="comite.html">Comité</a>
+<a class="amob" id="a3" href="calendrier.html">Calendrier</a>
+<a class="amob" id="a4" href="medias.html">Médias</a>
+<a class="amob" id="a5" href="mailto:clubdedebat@unige.ch?&subject=Ecris-nous%20!">Contact</a>
+</div>
+<div id="hidd">
+
+<div id="timeline"></div>
+
+<span id="p3"><i>Notre histoire</i></span>
+<span id="t3"><i>Le Club Genevois de Débat se positionne dans le milieu associatif de l’Université de Genève.<br><br>Créée en 2012 avec le soutien du Professeur Aubert, cette association a pour but principal d’offrir aux étudiants l’occasion de s’exprimer en public et de partager les clés de l’art oratoire.</i></span>
+
+<span id="p2"><i>Notre plus-value</i></span>
+<span id="t2"><i>Les activités du Club gravitent autour de séances hebdomadaires, de débats publics avec des invités politiques ou du corps professoral, de conférences ainsi que de journées de formations.<br><br>Le Club de Débat est persuadé qu’une aisance orale doit s’inscrire dans l’attirail de chaque étudiant. C’est pourquoi toutes nos séances hebdomadaires sont accessibles à chacun d’entre vous sans prérequis ou cotisation.</i></span>
+
+<span id="p1"><i>Rendez-vous hebdomadaire</i></span>
+<span id="t1"><i>Les séances de débats ont lieu durant les semestres universitaires chaque mardi de 18h15 à 20h00 en salle 4020 du bâtiment Uni-Mail.</i></span>
+
+<span id="p4"><i>Notre apophtegme</i></span>
+<span id="t4"><i>« Le débat mène à tout, et tout mène au débat. »</i></span>
+
+<span id="p5"><i>Statuts</i></span>
+<span id="t5"><i><a href="link/StatutsCGdD.pdf" style="line-height:1.4;text-decoration:none;color:#C49C0D;" target="_blank">Cliquez ici</a> pour accéder aux Statuts de l’Association « Club Genevois de Débat ».</i></span>
+
+<span id="p6"><i>Événements passés</i></span>
+<span id="t6"><i><a href="link/past.pdf" style="text-decoration:none;color:#C49C0D;" target="_blank">Cliquez ici</a> pour accéder à l'historique des événements du Club de Débat (training / conférence / débat public).</i></span>
+
+<span id="p7"><i>Donation</i></span>
+<span id="t7"><i><a href="donation.html" style="text-decoration:none;color:#C49C0D;" target="_blank">Cliquez ici</a> pour faire un don !</i></span>
+
+</div>
+
+  </body>
+
+
+</html>

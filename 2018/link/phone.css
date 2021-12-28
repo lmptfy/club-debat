@@ -1,0 +1,130 @@
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) {
+
+    #menu {
+      visibility: hidden;
+      width: 100%;
+    }
+    #sec1 {
+      height: 70%;
+    }
+    #sec2 {
+      height: 30%;
+    }
+    #logo {
+      margin: auto;
+      left: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+    }
+    a.nav {
+      font-size: 4rem;
+      line-height: 2.5;
+      }
+
+    ul {
+      width: 90%;
+      text-align: center;
+      top: 450px;
+      left: 0px;
+    }
+    #bottom {
+      bottom: 200px;
+      left: 65px;
+    }
+    #bottom svg {
+      width: 46px;
+      height: 46px;
+    }
+    #bottom svg:hover {
+      color: #930025;
+  }
+    #sec2 .a {
+      left: 75px;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    #moto {
+      position: fixed;
+      bottom: 75px;
+      left: 75px;
+      text-align: left;
+      font-style: italic;
+      width: 490px;
+      font-size: 1.5rem;
+    }
+
+  #acceuil {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    visibility: visible;
+  }
+}
+
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+  #menu {
+    visibility: hidden;
+    width: 100%;
+  }
+  #sec1 {
+    height: 70%;
+  }
+  #sec2 {
+    height: 30%;
+  }
+  #logo {
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+  }
+  a.nav {
+    font-size: 4rem;
+    line-height: 2.5;
+    }
+
+  ul {
+    width: 90%;
+    text-align: center;
+    top: 450px;
+    left: 0px;
+  }
+  #bottom {
+    bottom: 200px;
+    left: 65px;
+  }
+  #bottom svg {
+    width: 46px;
+    height: 46px;
+  }
+  #bottom svg:hover {
+    color: #930025;
+  }
+  #sec2 .a {
+    left: 75px;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  #moto {
+    position: fixed;
+    bottom: 75px;
+    left: 75px;
+    text-align: left;
+    font-style: italic;
+    width: 490px;
+    font-size: 1.5rem;
+  }
+
+
+
+
+  #acceuil {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,988 @@
+@media only screen and (min-width: 1025px) {
+
+#www {
+  overflow-y: visible;
+}
+#a {
+  color: white;
+  text-decoration: none;
+}
+#bienvenue {
+  margin-left: 50px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.1;
+  color: black;
+  text-align: justify;
+  width: 45%;
+  position: absolute;
+  top: 15%;
+}
+#idd,td {
+  filter: grayscale(100);
+  z-index: 10000000000;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
+}
+#idd:hover,td:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+#histoire {
+  width: 100%;
+  height: 28%;
+  position: absolute;
+  left: 0px;
+  top: 16%;
+  background-color: rgb(120,191,234);
+  cursor:url(img/cur.png),auto;
+}
+#svghistoire {
+  height: 90%;
+  width: auto;
+  position: absolute;
+  left: 50px;
+  top: 5%;
+}
+#vision {
+  width: 100%;
+  height: 28%;
+  position: absolute;
+  left: 0px;
+  top: 44%;
+  background-color: rgb(214,113,89);
+  cursor:url(../img/cur.png),auto;
+}
+#svgvision {
+  height: 90%;
+  width: auto;
+  position: absolute;
+  right: 50px;
+  top: 5%;
+}
+#legal {
+  width: 100%;
+  height: 28%;
+  position: absolute;
+  left: 0px;
+  top: 72%;
+  background-color: rgb(214,113,89);
+  background-color: rgb(148,222,170);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius:  6px;
+  cursor:url(../img/cur.png),auto;
+}
+#svglegal {
+  height: 90%;
+  width: auto;
+  position: absolute;
+  left: 50px;
+  top: 5%;
+}
+#descr {
+  text-align:justify;
+  position:absolute;
+  left:65%;
+  top:17%;
+  width:20%;
+  height:auto;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.1;
+  color: black;
+  text-decoration: none;
+}
+#audiomed1 {
+  width: 60%;
+  height: auto;
+  top: 17%;
+  position: absolute;
+  left: 50px;
+}
+#windowacc,#windowcom,#windowcal,#windowmed,#windowcon,#windowapr,#m,#audiomed1 {
+  visibility: hidden;
+}
+  #svg {
+    margin-right: 15px;
+  }
+  #copyr {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -99%;
+    left: 0px;
+    text-align: center;
+    z-index: 100000;
+    color: black;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+  }
+  #svgdown {
+    z-index: 100000;
+    position: absolute;
+    -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 2s infinite;
+    bottom: 30px;
+    left: 48%;
+    width: 4%;
+    height: 4%;
+    min-width: 16px;
+    min-height: 16px;
+  }
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {bottom: 20px;}
+    50%  {bottom: 40px}
+    100% {bottom: 20px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {bottom: 20px;}
+    50%  {bottom: 40px}
+    100% {bottom: 20px;}
+}
+  #windowtitle {
+    font-size: 60px;
+    font-weight: 100;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    left: 50px;
+    top:-35px;
+  }
+#windowaccclose,#windowcomclose,#windowcalclose,#windowmedclose,#windowconclose,#windowaprclose {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all .3s ease-out;
+}
+#windowaccclose:hover,#windowcomclose:hover,#windowcalclose:hover,#windowmedclose:hover,#windowconclose:hover,#windowaprclose:hover {
+  fill:white;
+  width: 32px;
+  height: 32px;
+  right: 24px;
+  top: 24px;
+  transform: rotate(90deg);
+}
+#windowacc,#windowcom,#windowcal,#windowmed,#windowcon,#windowapr {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  z-index: 1000;
+  border-radius: 6px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all .4s ease-out;
+}
+#windowacc {
+  background-color: #E0E0E0;
+}
+#windowcom {
+  background-color: #757575;
+}
+#windowcal {
+  background-color: #424242;
+}
+#windowmed {
+  background-color: #9E9E9E;
+}
+#windowcon {
+  background-color: #E0E0E0;
+}
+#windowapr {
+  background-color: #616161;
+}
+body,a {
+  cursor:url(../img/curb.png),auto;
+}
+#logo {
+  display: block;
+  margin:0 auto;
+  margin-top: 5px;
+  width: auto;
+  opacity: 0;
+  height: 26%;
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+}
+
+#italienp,#asiatiquep,#turquep,#poissonp,#hamburgerp,#veganp,#mexicainp,#francaisp{
+width: auto;
+height: 30%;
+position: absolute;
+left: 15px;
+}
+#m {
+position: absolute;
+right: 20%;
+width: 60%;
+min-width: 200px;
+height: 60%;
+min-height: 200px;
+border-radius: 3px;
+background-color: transparent;
+-webkit-transition: all 0.4s ease-out;
+-moz-transition: all 0.4s ease-out;
+-o-transition: all 0.4s ease-out;
+transition: all 0.4s ease-out;
+cursor:url(../img/curb.png),auto;
+}
+#title {
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+.menu-btn,.menu-icon,.navicon {
+  visibility: hidden;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+#m:hover {
+right: 10%;
+width: 80%;
+}
+#ita,#ham,#veg {
+  color: black;
+}
+#asi,#poi,#mex {
+  color: white;
+}
+#ita,#asi,#poi,#ham,#veg,#mex {
+opacity: .9;
+border-radius: 3px;
+font-size: 30px;
+font-weight: 300;
+z-index: 1003;
+font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+-o-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out;
+box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+}
+#ita:hover,#asi:hover,#poi:hover,#ham:hover,#veg:hover,#mex:hover {
+font-size: 32px;
+opacity: 1;
+background-color: #37474F;
+}
+#ita {
+width: 55%;
+height: 32%;
+position: absolute;
+left: 0px;
+top: 0px;
+background-color: #E0E0E0;
+}
+#ita:hover {
+opacity: 1;
+box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+}
+
+#asi {
+width: 44%;
+height: 32%;
+position: absolute;
+right: 0px;
+top: 0px;
+background-color: #757575;
+}
+#asi:hover {
+opacity: 1;
+box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+}
+
+#poi {
+width: 35%;
+height: 32%;
+position: absolute;
+left: 0px;
+top: 34%;
+background-color: #424242;
+}
+#poi:hover {
+opacity: 1;
+box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+}
+
+#ham {
+width: 64%;
+height: 32%;
+position: absolute;
+right: 0px;
+top: 34%;
+background-color: #9E9E9E;
+}
+#ham:hover {
+opacity: 1;
+box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+}
+#logomobile {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  visibility: hidden;
+  width: 0px;
+  height:0px;
+}
+
+.wwc {
+  width: auto;
+  height: auto;
+  position: fixed;
+  text-align: right;
+  right: 20px;
+  bottom: 20px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+
+#veg {
+width: 100%;
+height: 32%;
+position: absolute;
+left: 0px;
+bottom: 0px;
+background-color: #E0E0E0;
+
+}
+#veg:hover {
+opacity: 1;
+box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+-moz-box-shadow:rgba(0, 0, 0, 0.3) 0 10px 10px 0;
+}
+
+#m {
+  position: absolute;
+  top: 30%;
+}
+
+#body {
+  background-image: url(../img/fd.png);
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+#vidd {
+  position:fixed;
+  margin:auto;
+  left:0;
+  right:0;
+  height:100%;
+}
+#d {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 10000;
+  background-color: #fffff8;
+  color: rgb(22, 33, 44);
+  cursor:url(../img/cur.png),auto;
+
+}
+
+a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: -100px;
+  top: -100px;
+  width: 0px;
+  height: 0px;
+}
+#title {
+  font-size: 60px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  z-index: 10;
+  color: #fffff8;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  height: 80px;
+  width: 50%;
+  text-align: center;
+  line-height: 1.4;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1025px) {
+
+  body, html {
+    display: block;
+    overflow: hidden;
+  }
+  #m,#histoire,#svghistoire,#vision,#svgvision,#legal,#svglegal,#ita,#asi,#poi,#ham,#veg,#mex,#svg,#italienp,#asiatiquep,#turquep,#poissonp,#hamburgerp,#veganp,#mexicainp,#francaisp,#windowacc,#windowcom,#windowcal,#windowmed,#windowcon,#windowapr,#windowtitle,#windowaccclose,#windowcomclose,#windowcalclose,#windowmedclose,
+  #windowconclose,#windowaprclose,#logo,#audiomed1 {
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  a#ita,a#asi,a#poi,a#ham,a#veg,a#mex {
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+#logomobile {
+  visibility: visible;
+  width: 100px;
+  height: 100px;
+  display:block;
+  padding-top: 10px;
+  margin:0 auto;
+}
+
+.wwc {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  text-align: center;
+  left: 0px;
+  bottom: 20px;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+  a#a1.amob,a#a2.amob,a#a3.amob,a#a4.amob,a#a5.amob {
+    visibility: hidden;
+    opacity: 1;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 4rem;
+    text-decoration: none;
+  }
+
+  a#a1.amob {
+    top: 20%;
+    left: -110px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  a#a2.amob {
+    top: 33%;
+    left: -160px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  a#a3.amob {
+    top: 46%;
+    left: -210px;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+  a#a4.amob {
+    top: 59%;
+    left: -260px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  a#a5.amob {
+    top: 72%;
+    left: -310px;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+  }
+
+
+
+  #www {
+    overflow-y: visible;
+  }
+  #event1 {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 45%;
+    height: 80%;
+    background-color: rgb(250, 250, 250);
+    border-radius: 6px;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+    -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+    cursor:url(../img/cur.png),auto;
+  }
+  #event1:hover {
+    top: 14%;
+    left: 2%;
+    width: 46%;
+    height: 82%;
+  }
+  #event2 {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+    width: 45%;
+    height: 80%;
+    background-color: rgb(250, 250, 250);
+    border-radius: 6px;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+    -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+    -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+    cursor:url(../img/cur.png),auto;
+  }
+  #event2:hover {
+    top: 14%;
+    right: 2%;
+    width: 46%;
+    height: 82%;
+  }
+  #a {
+    color: white;
+    text-decoration: none;
+  }
+  #bienvenue {
+    margin-left: 5%;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 1.4em;
+    line-height: 1.1;
+    color: black;
+    text-align: justify;
+    width: 90%;
+    position: absolute;
+    top: 10%;
+  }
+  #idd,td {
+    filter: grayscale(100);
+    z-index: 10000000000;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all .3s ease-out;
+  }
+  #idd:hover,td:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+  }
+
+  #descr {
+    text-align:justify;
+    position:absolute;
+    height:auto;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 1.1;
+    color: black;
+    text-decoration: none;
+  }
+    #copyr {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: -99%;
+      left: 0px;
+      text-align: center;
+      z-index: 100000;
+      color: black;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 10px;
+    }
+    #svgdown {
+      opacity: 0;
+      position: fixed;
+      bottom: 30px;
+      left: 48%;
+      width: 1px;
+      height: 1px;
+    }
+    #windowtitle {
+      font-size: 60px;
+      font-weight: 100;
+      font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      position: absolute;
+      left: 50px;
+      top:-35px;
+    }
+  #m {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  visibility: hidden;
+  height: auto;
+  width: 100%;
+  z-index: 10000000000;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  }
+
+  /* menu icon */
+
+.menu-icon {
+z-index: 1000000000022;
+display: inline-block;
+float: left;
+padding: 50px 25px;
+position: relative;
+user-select: none;
+}
+
+.menu-icon .navicon {
+background: white;
+display: block;
+height: 4px;
+border-radius: 4px;
+position: relative;
+transition: .2s ease-out;
+width: 80px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+background: white;
+content: '';
+display: block;
+height: 100%;
+position: absolute;
+transition: all .2s ease-out;
+width: 100%;
+}
+
+.menu-icon .navicon:before {
+top: 25px;
+border-radius: 4px;
+}
+
+.menu-icon .navicon:after {
+top: -25px;
+border-radius: 4px;
+}
+
+/* menu btn */
+
+.menu-btn {
+display: none;
+}
+
+.menu-btn:checked ~ .menu {
+max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+top: 0;
+}
+
+  #d {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    background-color: black;
+    color: ;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+  }
+
+  #title {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+  }
+  #body {
+    background-image: url(../img/fd.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  #vidd {
+    position:fixed;
+    margin:auto;
+    left:0;
+    right:0;
+    height:100%;
+  }
+  #title {
+    font-size: 4em;
+    font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    z-index: 10;
+    color: #fffff8;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    height: 80px;
+    width: 70%;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  #m{
+    width: 100%;
+    height: 100%;
+    left: 0px;
+  }
+
+  #ita{
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    top: 0%;
+  }
+
+  #asi{
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    top: 20%;
+  }
+
+  #poi{
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    top: 40%;
+  }
+
+  #ham{
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    top: 60%;
+  }
+
+  #veg{
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    top: 80%;
+  }
+
+  #mex{
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    top: 100%;
+  }
+
+  #logo{
+    width: 30%;
+    top: 20px;
+    display: block;
+    margin:0 auto;
+  }
+
+  #audiomed1{
+    width: 90%;
+    left: 5%;
+    top: 200px;
+  }
+
+  #descr{
+    width: 90%;
+    left: 5%;
+    top: 42%;
+  }
+
+  #svglegal{
+    height: 42%;
+    left: 10px;
+  }
+
+  #svgvision{
+    height: 42%;
+    left: 10px;
+  }
+
+  #svghistoire{
+    height: 42%;
+    left: 10px;
+  }
+
+  #legalp{
+    margin-left: 24%;
+  }
+
+  #visionp{
+    right: 28%;
+  }
+
+
+  #histoirep{
+    margin-left: 24%;
+  }
+
+
+}

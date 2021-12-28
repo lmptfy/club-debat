@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Damien Hussy</title>
+    <link rel="icon" href="../img/CGDcopy.png" type="image">
+    <link rel="stylesheet" type="text/css" href="../link/pro.css">
+  </head>
+  <body>
+    <a href="../home.html#d"><img id="bannlog"src="../img/moblogo.png"></a>
+
+
+<!-- MENU MOBI-->
+<input onclick="mmenu()" class="menu-btn" type="checkbox" id="menu-btn" />
+<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+<div id="d">
+<a class="amob" id="a0" href="../home.html">Menu</a>
+<a class="amob" id="a1" href="../accueil.html">Accueil</a>
+<a class="amob" id="a2" href="../comite.html">Comité</a>
+<a class="amob" id="a3" href="../calendrier.html">Calendrier</a>
+<a class="amob" id="a4" href="../medias.html">Médias</a>
+<a class="amob" id="a5" href="mailto:clubdedebat@unige.ch?&subject=Ecris-nous%20!">Contact</a>
+</div>
+
+
+
+
+
+
+
+<!-- FOND -->
+    <div id="un">
+    </div>
+
+
+<!-- BANNER -->
+    <div id="deux">
+    </div>
+
+
+    <!-- BIOGRAPHIE -->
+        <div id="trois">
+
+          <p id="pd"><ul style="margin-left:40px;margin-right:60px;line-height:1.3;">
+            <br>
+            <li><b>Faculté :</b><br>Étudiant en International Business Management (Haute École de Gestion)</li><br>
+            <li><b>Membre depuis :</b><br>Septembre 2017</li><br>
+            <li><b>Pourquoi le CGdD :</b><br>La curiosité et l’enthousiasme me font vivre. En arrivant au club de débat, j’ai rencontré un groupe hétéroclite et fascinant de part son ouverture d’esprit et sa bienveillance. Bref, un lieu idéal pour être en désaccord tout en apprenant à manier la rhétorique.</li><br>
+          </ul></p>
+
+        </div>
+
+
+<!-- PRENOM ET TITRE-->
+    <div id="quatre">
+      <p id="pp" style="width:100%;text-align:center;">Damien Hussy</p>
+      <p id="ppp" style="width:100%;text-align:center;font-weight:400;">Trésorier</p>
+      <p id="pppp" style="text-align:center;"><a style="margin-left:50px;margin-right:50px;" href="https://www.facebook.com/damien.hussy" target="_blank">Facebook</a> <a style="margin-left:50px;margin-right:50px;" href="https://www.linkedin.com/in/damien-hussy-2b379171/" target="_blank">Linkedin</a> <a style="margin-left:50px;margin-right:50px;" href="mailto:Damien@ncmedia.ch" target="_top">Courriel</a></p>
+    </div>
+
+
+<!-- PP-->
+      <img src="../img/damien.png" id="cinq">
+
+
+
+
+  </body>
+
+
+  <style media="screen">
+  @media only screen and (min-width: 1025px) {
+      #trois {
+        top: 550px;
+        height: 320px;
+      }
+
+@media only screen and (max-width: 1025px) {
+      #trois {
+        top: 885px;
+        height: 810px;
+      }
+  }
+
+  </style>
+
+  <script>
+
+      var nbclck=0;
+      function mmenu() {
+      nbclck++;
+
+
+
+      if (nbclck%2==0) {
+
+        document.getElementById("d").style.height="0px";
+
+        document.body.style.overflow="visible";
+
+        document.getElementById("a0").style.visibility="hidden";
+        document.getElementById("a1").style.visibility="hidden";
+        document.getElementById("a2").style.visibility="hidden";
+        document.getElementById("a3").style.visibility="hidden";
+        document.getElementById("a4").style.visibility="hidden";
+        document.getElementById("a5").style.visibility="hidden";
+
+        document.getElementById("bannlog").style.visibility="hidden";
+        document.getElementById("bannlog").style.opacity="0";
+
+        document.getElementById("a0").style.left="-110px";
+        document.getElementById("a1").style.left="-110px";
+        document.getElementById("a2").style.left="-160px";
+        document.getElementById("a3").style.left="-210px";
+        document.getElementById("a4").style.left="-260px";
+        document.getElementById("a5").style.left="-310px";
+
+
+        document.getElementById("trois").style.height="1520px";
+        document.getElementById("trois").style.top="885px";
+        document.getElementById("trois").style.visibility="visible";
+        document.getElementById("un").style.visibility="visible";
+        document.getElementById("d").style.position="absolute";
+        document.getElementById("deux").style.position="absolute";
+        document.getElementById("trois").style.position="absolute";
+        document.getElementById("quatre").style.position="absolute";
+        document.getElementById("cinq").style.position="absolute";
+      }
+
+      else {
+
+        document.getElementById("d").style.height="100%";
+
+        document.body.style.overflow="hidden";
+
+
+        document.getElementById("a0").style.visibility="visible";
+        document.getElementById("a1").style.visibility="visible";
+        document.getElementById("a2").style.visibility="visible";
+        document.getElementById("a3").style.visibility="visible";
+        document.getElementById("a4").style.visibility="visible";
+        document.getElementById("a5").style.visibility="visible";
+
+        document.getElementById("bannlog").style.visibility="visible";
+        document.getElementById("bannlog").style.opacity="1";
+
+
+        document.getElementById("a0").style.left="25%";
+        document.getElementById("a1").style.left="25%";
+        document.getElementById("a2").style.left="25%";
+        document.getElementById("a3").style.left="25%";
+        document.getElementById("a4").style.left="25%";
+        document.getElementById("a5").style.left="25%";
+
+        document.getElementById("trois").style.height="10px";
+        document.getElementById("trois").style.top="10px";
+        document.getElementById("trois").style.visibility="hidden";
+        document.getElementById("un").style.visibility="hidden";
+        document.getElementById("d").style.position="fixed";
+        document.getElementById("menu-btn").style.position="fixed";
+        document.getElementById("deux").style.position="fixed";
+        document.getElementById("trois").style.position="fixed";
+        document.getElementById("quatre").style.position="fixed";
+        document.getElementById("cinq").style.position="fixed";
+
+      }
+
+      }
+
+</script>
+</html>

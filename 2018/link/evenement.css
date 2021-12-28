@@ -1,0 +1,71 @@
+#acceuil {
+  position: absolute;
+  left: 500px;
+  right: 0px;
+  top: 0px;
+  width: auto;
+  height: auto;
+  background-color: #40404c;
+}
+#date1 {
+  text-align: right;
+  margin-right: 20px;
+  font-size:4rem;
+  font-weight:100;
+}
+#date2 {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: -80px;
+  font-size:1.2rem;
+  font-weight:200;
+}
+#descri {
+  text-align:left;
+  margin-top: -50px;
+  margin-left: 30px;
+  padding-bottom: 30px;
+  width: 80%;
+  font-size:1.2rem;
+  font-weight:100
+}
+#event {
+  margin: auto;
+  left: 0; right: 0;
+  width: 700px;
+  height: auto;
+  margin-top: 60px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 6px;
+  font-family: "Myriad Set Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+  -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 3px 3px 0;
+}
+
+@media only screen and (max-width: 1400px) {
+#acceuil {
+  left: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+}
+
+@media only screen and (max-width: 760px) {
+  #acceuil {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #40404c;
+  }
+}
